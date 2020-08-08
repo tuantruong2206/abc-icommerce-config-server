@@ -1,0 +1,16 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: dev
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/tuantruong2206/nab-config-repo.git
+          searchPaths: '{application}/{profile}'
+          clone-on-start: true
+          default-label: master
