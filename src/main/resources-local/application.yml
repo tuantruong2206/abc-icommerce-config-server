@@ -8,7 +8,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/tuantruong2206/nab-icommerce-config-repo.git
+          uri: https://github.com/tuantruong2206/abc-icommerce-config-repo.git
           searchPaths: '{application}/{profile}'
           clone-on-start: true
           default-label: master
